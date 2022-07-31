@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width
+	border:  1px solid #000;
+	padding: 0 30px;
+}
+
+.cover {
+	height:  100vh;
+	background:  url(http://themes.semicolonweb.com/html/canvas/one-page/images/page/main.jpg) no-repeat;
+	background-size:  cover;
+	background-position:  0;
+	position:  relative;
+}
+
+#scroll-up {
+	border:  2px solid #000;
+	color: #000;
+	background:  #fff;
+	width:  150px;
+	height:  48px;
+	margin:  15px auto;
+	display:  block;
+	cursor:  pointer;
+}
+
+#scroll-down {
+	position:  absolute;
+	width:  150px;
+	height:  48px;
+	border:  2px solid #fff;
+	color: #fff;
+	z-index:  10;
+	background:  rgba(0, 0, 0, 0.5);
+	left:  0;
+	right:  0;
+	bottom:  15%;
+	margin:  auto;
+	cursor:  pointer;
+
+	transition:  all 3s cubic-bezier(1.000, -0.005, 0.000, 1.010);
+}
+
+#scroll-down.up {
+	bottom:  85%;
+}
+
+.middle-image {
+	height:  250px;
+	background:  url(http://themes.semicolonweb.com/html/canvas/one-page/images/page/testimonials.jpg) no-repeat;
+	background-size:  cover;
+	background-position:  0 0;
+}
